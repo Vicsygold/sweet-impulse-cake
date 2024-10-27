@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+  
+
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+}
+
+
+/* check list */
+#check{display: none;}
+.open, .close{
+    position: absolute;
+    color: crimson;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open{
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+ 
+}
+.close{
+    top: 20px;
+    right:20px;
+    
+}
+
+
+.links li a {
+    padding: 0 20px;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+    color: whitesmoke;
+    text-align: center;
+    position: relative;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.links a:hover {
+    color: crimson;
+    transition: 0.2s ease-in;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    border-radius: 50px;
+    background-color: crimson;
+    transition: all 0.3s ease 0s;
+    margin: 0 70px;
+}
+
+
+
+/* Change the link color when scrolling down */
+nav.scrolled .links li a {
+    color: crimson;
+}
+
+.name{
+    margin: 0 70px;
+    color: crimson;
+    font-family: fantasy;
+}
+
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)), url(pictures/cake\ 3.jpg) no-repeat center / cover;
+    position: relative;
+    top: 0px;
+}
+.hero .header{
+    position: absolute;
+    margin-top: 225px;
+    margin-left: 150px;
+    font-size: 70px;
+    color: whitesmoke;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.sub-head{
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 160px;
+    font-size: 35px;
+    color: crimson;
+}
+
+.video {
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+/* Style for the section title */
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 35px;
+    
+}
+.title span {
+    color: crimson;
+   
+}
+
+/* Style for the video container using grid */
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* end of video section */
+
+/* success begin */
+
+
+/* Style for the title */
+.Success .title {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style for the section layout */
+.Success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 50px;
+    max-width: 100%;
+    justify-content: center;
+    text-align: center; /* Center align the entire content */
+}
+
+/* Style for the content (text and image) */
+.Success .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* Style for the sub-title text */
+.sub-title {
+    font-size: 20px;
+    line-height: 1.6;
+    width: 50%;
+    padding-right: 20px;
+    text-align: justify; /* Add justified alignment */
+}
+
+/* Style for the image */
+.image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.image-container img{
+    border: 2px solid;
+}
+
+
+.Success:hover .image img {
+    transition: transform 1s ease-in-out;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    
+}
+
+
+
+/* Style for the gallery section */
+.gallery {
+    padding: 50px;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 20px; /* Spacing between the items */
+    justify-content: center;
+}
+
+.gallery-item {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img {
+    width: 100%; 
+    height: auto;  
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Make the links for h3 and p tags appear styled like normal text */
+.gallery-item a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: inherit;
+}
+
+.gallery-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+    cursor: pointer;
+}
+
+.gallery-item p {
+    font-size: 16px;
+    color: crimson;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+
+
+
+/* Styling the form container */
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 50px;
+    margin: 50px auto;
+    width: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+
+/* Styling the form title */
+.contact-form .title {
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-family: 'Dancing Script', cursive;
+    color: crimson;
+}
+
+/* Styling form groups (label + input/textarea) */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+.form-group label {
+    font-size: 18px;
+    color: crimson;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Input and textarea styling */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid crimson;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Input and textarea focus state */
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: darkred;
+}
+
+/* Button styling */
+button {
+    padding: 15px 30px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: darkred;
+}
+
+/* Textarea resizing */
+.form-group textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+
+
+/* Footer styles */
+footer {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e9ecef;
+  }
+
+
+
+  footer a {
+    text-decoration: none;
+    color: #fefefe;
+  }
+  
+  footer p {
+    text-decoration: none;
+    color: #fefefe;
+    margin-top: 10px;
+  }
+
+  footer p i{
+    color: crimson;
+    margin-top: 10px;
+  }
+
+
+
+
+
+
+
+  /*  Mobile view - screens smaller than 768px */
+
+@media (max-width: 768px) {
+    .links{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #29323c;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .links li{margin-top: 40px;}
+    .links li a{padding: 10px;}
+    .open, .close{
+    display: block}
+    #check:checked ~ .links{right: 0;}
+
+    nav button{
+        display: none;
+    }
+
+
+
+
+
+
+    /* Hero section */
+    .hero .header {
+        margin-top: 230px;
+        margin-left: 20px;
+        font-size: 50px; /* Reduce font size for smaller screens */
+    }
+    .sub-head {
+        margin-left: 25px;
+        margin-top: 350px;
+        font-size: 25px; /* Smaller font size */
+    }
+
+    /* Video section */
+    .video-container {
+        grid-template-columns: 1fr; /* Stack videos on top of each other */
+    }
+
+    /* Success section */
+    .Success .content {
+        flex-direction: column; /* Stack text and image vertically */
+        text-align: center;
+    }
+    .sub-title {
+        width: 100%; /* Take full width for mobile view */
+        padding-right: 0;
+    }
+    .image {
+        width: 100%;
+        margin-top: 20px; /* Add space between text and image */
+    }
+
+    /* Gallery section */
+    .gallery-container {
+        grid-template-columns: 1fr; /* Stack gallery items on top of each other */
+    }
+
+    /* Contact form */
+    .contact-form {
+        width: 90%; /* Reduce width for smaller screens */
+        padding: 30px;
+        align-items: center;
+    }
+    .form-group label {
+        font-size: 16px; /* Slightly smaller font */
+    }
+    button {
+        width: 100%;
+        
+    }
+
+    /* Footer */
+    footer p {
+        font-size: 14px;
+    }
+}
+
+/* Tablet view - screens between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Navbar */
+
+
+
+
+    /* Hero section */
+    .hero .header {
+        margin-top: 150px;
+        margin-left: 50px;
+        font-size: 60px; /* Larger than mobile, smaller than desktop */
+    }
+    .sub-head {
+        margin-left: 60px;
+        margin-top: 60px;
+        font-size: 30px;
+    }
+
+    /* Video section */
+    .video-container {
+        grid-template-columns: repeat(2, 1fr); /* Two videos per row */
+    }
+
+    /* Success section */
+    .Success .content {
+        flex-direction: column; /* Stack vertically for better readability */
+    }
+    .sub-title {
+        width: 100%;
+    }
+    .image {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* Gallery section */
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr); /* Two gallery items per row */
+    }
+
+    /* Contact form */
+    .contact-form {
+        width: 70%; /* Slightly wider than mobile */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Adjust form on small screens */
+/* @media (max-width: 768px) {
+    .form-group {
+        flex-direction: column; Stack labels on top of inputs for smaller screens
+        align-items: flex-start;
+    }
+
+    .form-group label {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+    }
+} */
+
+
+
+
+
