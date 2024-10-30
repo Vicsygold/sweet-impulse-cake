@@ -39,7 +39,7 @@ nav {
 #check{display: none;}
 .open, .close{
     position: absolute;
-    color: whitesmoke;
+    color: crimson;
     cursor: pointer;
     font-size: 1.5rem;
     display: none;
