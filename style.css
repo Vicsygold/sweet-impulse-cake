@@ -435,11 +435,11 @@ footer {
     /* Hero section */
     .hero .header {
         margin-top: 230px;
-        margin-left: 20px;
+        margin-left: 0;
         font-size: 50px; /* Reduce font size for smaller screens */
     }
     .sub-head {
-        margin-left: 25px;
+        margin-left: 0;
         margin-top: 350px;
         font-size: 25px; /* Smaller font size */
     }
@@ -447,7 +447,9 @@ footer {
     .hero{
     width: 106vw;
     height: 100vh;
+    margin-right: 0;
     position: relative;
+ 
 
 }
 
