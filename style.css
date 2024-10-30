@@ -394,6 +394,13 @@ footer {
   /*  Mobile view - screens smaller than 768px */
 
 @media (max-width: 768px) {
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
     .links{
         flex-direction: column;
         align-items: center;
