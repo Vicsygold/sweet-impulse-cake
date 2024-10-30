@@ -340,7 +340,7 @@ button {
     background-color: crimson;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: 16px;
@@ -485,14 +485,18 @@ footer {
     .form-group label {
         font-size: 16px; /* Slightly smaller font */
     }
-    button {
-        width: 100%;
-        
+    button .btn-send{
+        width: 50%;
     }
 
     /* Footer */
     footer p {
         font-size: 14px;
+    }
+
+    #footer{
+        width: 106vw;
+        position: relative;
     }
 }
 
