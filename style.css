@@ -441,6 +441,9 @@ footer {
         margin-top: 350px;
         font-size: 25px; /* Smaller font size */
     }
+    .hero{
+        width: 100%;
+    }
 
     /* Video section */
     .video-container {
