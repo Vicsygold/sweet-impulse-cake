@@ -394,15 +394,24 @@ footer {
   /*  Mobile view - screens smaller than 768px */
 
 @media (max-width: 768px) {
-
-    *{
+    * {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
-        
     }
 
+    /* Ensure body and html cover full viewport */
+html, body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
 
+/* Remove space around the navbar in mobile view */
+nav {
+    width: 100vw;
+}
+    
     .links{
         flex-direction: column;
         align-items: center;
@@ -445,12 +454,11 @@ footer {
     }
 
     .hero{
-    width: 106vw;
-    height: 100vh;
-    position: relative;
- 
-
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
 }
+
 
     /* Video section */
     .video-container {
@@ -495,10 +503,10 @@ footer {
     }
 
     #footer{
-        width: 106vw;
-        position: relative;
+        width: 100vw;
     }
 }
+
 
 /* Tablet view - screens between 768px and 1024px */
 @media (min-width: 768px) and (max-width: 1024px) {
