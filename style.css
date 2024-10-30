@@ -445,13 +445,10 @@ footer {
     }
 
     .hero{
-    width: 100vw;
+    width: 106vw;
     height: 100vh;
     position: relative;
-    /* top: 0px;
-    left: 0px;
-    padding: 0px;
-    display: flex; */
+
 }
 
     /* Video section */
