@@ -478,7 +478,7 @@ nav {
     nav button{
         display: none;
     }
-    nav .name{
+    nav.name{
         font-size: small;
 
     }
