@@ -73,6 +73,49 @@ nav {
     transition: 0.2s ease-in;
 }
 
+.links li {
+    position: relative;
+}
+
+
+
+.links li .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 0;
+    list-style: none;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.links li:hover .dropdown {
+    display: block;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown li a:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+
+
+
+
+
+
+
 button {
     padding: 10px 20px;
     border: none;
@@ -93,7 +136,7 @@ nav.scrolled .links li a {
 .name{
     margin: 0 70px;
     color: crimson;
-    font-family: fantasy;
+    font-family: fantasy; 
 }
 
 
