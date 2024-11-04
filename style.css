@@ -506,6 +506,7 @@ nav {
     /* Video section */
     .video-container {
         grid-template-columns: 1fr; /* Stack videos on top of each other */
+       
     }
 
     /* Success section */
@@ -515,7 +516,9 @@ nav {
     }
     .sub-title {
         width: 100%; /* Take full width for mobile view */
-        padding-right: 0;
+        padding: 0px;
+        text-align: justify;
+       
     }
     .image {
         width: 100%;
