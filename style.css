@@ -478,7 +478,9 @@ nav {
     nav button{
         display: none;
     }
-
+    .name{
+        font-size: 30px;
+    }
 
 
 
