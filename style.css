@@ -479,7 +479,7 @@ nav {
         display: none;
     }
     nav .name h1{
-        font-size: 20px;
+        font-size: 15px;
         padding-right: 200px;
     }
 
@@ -509,6 +509,7 @@ nav {
     /* Video section */
     .video-container {
         grid-template-columns: 1fr; /* Stack videos on top of each other */
+        padding-right: 5px;
        
     }
 
