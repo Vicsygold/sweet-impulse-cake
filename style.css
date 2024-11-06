@@ -157,7 +157,10 @@ nav.scrolled .links li a {
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
+   
 }
+
+
 
 .sub-head{
     position: absolute;
@@ -188,10 +191,12 @@ nav.scrolled .links li a {
 .video-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-    grid-gap: 20px;
+    grid-gap: 10px;
     justify-items: center;
     align-items: center;
     padding-top: 20px;
+    
+    
 }
 
 /* end of video section */
