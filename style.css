@@ -190,13 +190,13 @@ nav.scrolled .links li a {
 /* Style for the video container using grid */
 .video-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 5px; /* Reduce gap between columns */
     justify-items: center;
     align-items: center;
     padding-top: 20px;
-    
-    
+    max-width: 1000px; /* Optional: Limit width for a more compact layout */
+    margin: 0 auto; /* Center the container */
 }
 
 /* end of video section */
@@ -532,6 +532,7 @@ nav {
     .video-container {
         grid-template-columns: 1fr; /* Stack videos on top of each other */
         padding-right: 5px;
+        align-items: center;
        
     }
 
