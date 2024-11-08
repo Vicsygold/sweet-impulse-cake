@@ -529,6 +529,10 @@ nav {
 
 
     /* Video section */
+    .video{
+        padding: 20px;
+    }
+
     .video-container {
         grid-template-columns: 1fr; /* Stack videos on top of each other */
         padding-right: 5px;
