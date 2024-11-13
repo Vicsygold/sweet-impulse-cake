@@ -58,7 +58,7 @@ nav {
 
 
 .links li a {
-    padding: 0 20px;
+    padding: 28px 20px;
     text-decoration: none;
     transition: 0.2s ease-in-out;
     color: whitesmoke;
@@ -66,6 +66,8 @@ nav {
     position: relative;
     font-size: 16px;
     font-weight: bolder;
+    margin:0px 40px 0px 0px  ;
+   
 }
 
 .links a:hover {
@@ -75,44 +77,8 @@ nav {
 
 .links li {
     position: relative;
+    display: flex;   
 }
-
-
-
-.links li .dropdown {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    padding: 0;
-    list-style: none;
-    top: 100%;
-    left: 0;
-    width: 200px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    z-index: 1000;
-}
-
-.links li:hover .dropdown {
-    display: block;
-}
-
-.dropdown li a {
-    display: block;
-    padding: 10px;
-    color: #333;
-    text-decoration: none;
-}
-
-.dropdown li a:hover {
-    background-color: #f0f0f0;
-}
-
-
-
-
-
-
-
 
 
 
@@ -123,8 +89,14 @@ button {
     border-radius: 50px;
     background-color: crimson;
     transition: all 0.3s ease 0s;
-    margin: 0 70px;
+    margin: auto;
 }
+
+
+
+
+
+
 
 
 
@@ -394,6 +366,10 @@ button {
     font-size: 16px;
 }
 
+.contact-button{
+    display: none;
+}
+
 /* Button hover effect */
 button:hover {
     background-color: darkred;
@@ -497,29 +473,12 @@ nav {
     display: block}
     #check:checked ~ .links{right: 0;}
 
-    .links .contact-button {
-        padding: 15px 30px;
-        background-color: crimson;
-        color: white;
-        border: none;
-        border-radius: 50px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        font-size: 16px;
-    }
 
-    nav a button{
-        display: none;
-    }
-
-    .links li button.contact-button:hover {
-        background-color: darkred;
-    }
-
+   
 
 
     nav .name h1{
-        font-size: 15px;
+        font-size: 25px;
         padding-right: 200px;
     }
 
